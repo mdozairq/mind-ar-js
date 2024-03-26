@@ -59,7 +59,6 @@ class CompilerBase {
       }
 
       const trackingDataList = await this.compileTrack({progressCallback, targetImages, basePercent: 50});
-
       for (let i = 0; i < targetImages.length; i++) {
         this.data[i].trackingData = trackingDataList[i];
       }
